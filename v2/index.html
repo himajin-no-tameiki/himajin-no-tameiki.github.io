@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>I Wanna Be Himawari</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/v2.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
-      <div class="footer">
-        <div>[操作方法] 移動: AD, ジャンプ: Space/W, 射撃: 左クリック, リセット: R</div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">I Wanna Be Himawari</div>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>I Wanna Be Himawari</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/v2.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+    <div class="footer">
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">I Wanna Be Himawari</div>
     </div>
-  </body>
+    <div>
+      <h3>操作方法</h3>
+      <p>
+        移動: AD/←→, ジャンプ: Space/W/↑, 射撃: 左クリック/Ctrl, リセット: R
+      </p>
+      <h3>使用素材</h3>
+      <p>
+        <ul style="padding-left: 20px;">
+          <li>魔王魂
+            <ul style="padding-left: 20px;">
+              <li><a href="https://maoudamashii.jokersounds.com/archives/se_maoudamashii_onepoint32.html" rel="nofollow">ハズレ
+                  (効果音)</a></li>
+            </ul>
+          </li>
+          <li>Freesound
+            <ul style="padding-left: 20px;">
+              <li><a href="https://freesound.org/people/yottasounds/sounds/176727/" rel="nofollow">pop (効果音)</a></li>
+            </ul>
+          </li>
+          <li>Ten by Twenty
+            <ul style="padding-left: 20px;">
+              <li><a href="http://www.tenbytwenty.com/#munro" rel="nofollow">Munro (フォント)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
